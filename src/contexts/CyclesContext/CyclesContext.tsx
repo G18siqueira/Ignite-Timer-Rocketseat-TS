@@ -52,6 +52,7 @@ const CyclesContextProvider = ({ children }: CyclesContextProvidersProps) => {
         }
       }),
     )
+    setActiveCycleId(null)
   }
 
   const createNewCycle = (data: CreateCycleData) => {
