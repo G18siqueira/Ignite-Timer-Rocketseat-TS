@@ -96,13 +96,12 @@ export const Separator = styled.div`
 /*********************************************************/
 /*********************************************************/
 // Estilo Button
-export const StartCountDownButton = styled.button`
+export const BaseCountDownButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   width: 100%;
-  background-color: ${(props) => props.theme['green-500']};
   color: ${(props) => props.theme['gray-100']};
   font-weight: bold;
   border: 0;
@@ -121,10 +120,23 @@ export const StartCountDownButton = styled.button`
     opacity: 0.7;
     cursor: not-allowed;
   }
+`
+
+export const StartCountDownButton = styled(BaseCountDownButton)`
+  background-color: ${(props) => props.theme['green-500']};
 
   &:hover {
     &:not(:disabled) {
       background-color: ${(props) => props.theme['green-700']};
+    }
+  }
+`
+export const StopCountDownButton = styled(BaseCountDownButton)`
+  background-color: ${(props) => props.theme['red-500']};
+
+  &:hover {
+    &:not(:disabled) {
+      background-color: ${(props) => props.theme['red-700']};
     }
   }
 `
