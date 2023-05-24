@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// Main
 export const HomeContainer = styled.main`
   display: flex;
   flex-direction: column;
@@ -15,6 +16,9 @@ export const HomeContainer = styled.main`
   }
 `
 
+/*********************************************************/
+/*********************************************************/
+// Div Form Container
 export const FormContainer = styled.div`
   display: flex;
   align-items: center;
@@ -27,6 +31,9 @@ export const FormContainer = styled.div`
   font-weight: bold;
 `
 
+/*********************************************************/
+/*********************************************************/
+// Estilo base dos inputs
 const BaseInput = styled.input`
   height: 2.5rem;
   background-color: transparent;
@@ -46,6 +53,7 @@ const BaseInput = styled.input`
     color: ${(props) => props.theme['gray-500']};
   }
 `
+// Input Task
 export const TaskInput = styled(BaseInput)`
   flex: 1;
 
@@ -53,10 +61,14 @@ export const TaskInput = styled(BaseInput)`
     display: none !important;
   }
 `
+// Input Minutos
 export const MinutesAmountInput = styled(BaseInput)`
   width: 4rem;
 `
 
+/*********************************************************/
+/*********************************************************/
+// Div Container Count Down
 export const CountDownContainer = styled.div`
   display: flex;
   gap: 1rem;
@@ -71,7 +83,7 @@ export const CountDownContainer = styled.div`
     border-radius: 8px;
   }
 `
-
+// Separador
 export const Separator = styled.div`
   display: flex;
   justify-content: center;
@@ -81,6 +93,9 @@ export const Separator = styled.div`
   overflow: hidden;
 `
 
+/*********************************************************/
+/*********************************************************/
+// Estilo Button
 export const StartCountDownButton = styled.button`
   display: flex;
   align-items: center;
